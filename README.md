@@ -26,7 +26,7 @@ Feature evaluation with survival analysis is in `/feature_anlysis`:
 
 1. Model performance comparsion
 
-    <img src="results/ROC_curves_four_models.png" width="50%">
+    <img src="results/ROC_curves_four_models.png" width="80%">
 
 
         
