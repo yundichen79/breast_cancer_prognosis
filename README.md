@@ -31,7 +31,7 @@ Feature evaluation with survival analysis is in `/feature_anlysis`:
         <td width="50%">
         <img src="results/ROC_curves_four_models.png" width="100%">
         </td>
-        <td width="250%">
+        <td width="50%">
         
     | Model             |   Accuracy |   Precision |   Recall |   F1 Score |   AUC-ROC |
     |------------------|------------|-------------|----------|------------|-----------|
