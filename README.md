@@ -28,7 +28,7 @@ Feature evaluation with survival analysis is in `/feature_anlysis`:
 
     <table>
     <tr>
-        <td width="50%">
+        <td width="150%">
         <img src="results/ROC_curves_four_models.png" width="100%">
         </td>
         <td width="50%">
