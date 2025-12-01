@@ -21,6 +21,8 @@ Open the notebook `breast_cancer_survival_prediction.ipynb` and step through the
 Feature evaluation with survival analysis is in `/feature_anlysis`:
 
 ....
+- Generate a prototype CDS dashboard via `plot_cds_dashboard(...)`, producing a patient-level survival report with clickable gene annotations.
+
 
 ## Results and Interpretation
 
@@ -50,4 +52,21 @@ Feature evaluation with survival analysis is in `/feature_anlysis`:
     </p>
 
 
-    The Calibration Curve shows that the Combined Model generates predictions that closely match the observed survival rates, while the survival probability distribution shows clear shifts in and separation of the distribution of alive and death groups, demonstracting the Combined Model's capacity to produce reliable, well-calibrated survival probability estimates. 
+    The Calibration Curve shows that the Combined Model generates predictions that closely match the observed survival rates, while the survival probability distribution shows clear shifts in and separation of the distribution of alive and death groups, demonstracting the Combined Model's capacity to produce reliable, well-calibrated survival probability estimates.
+
+## Output
+### Prototype Clinical Decision Support Dashboard
+
+To translate the model’s predictions into a clinically usable format, we implemented a prototype clinical decision support (CDS) dashboard. The dashboard presents a patient’s calibrated survival probability together with the most influential clinical and gene-expression features validated through Random Forest feature importance and Kaplan–Meier survival analysis.
+    
+The interface includes:
+
+- A color-coded survival probability bar (green = high survival probability, orange = intermediate, red = low)
+
+- A left panel summarizing key clinical features
+
+- A right panel listing top gene-expression markers, with hyperlinked gene symbols (NCBI Gene) for rapid evidence lookup
+
+<p align="center"> <img src="figures/mockdashboard_1265.png" width="80%"> </p>
+
+The SVG version preserves active hyperlinks for gene symbols:  **[Open SVG Dashboard (with clickable gene links)](results/cds_dashboard_patient_1265.svg)**
