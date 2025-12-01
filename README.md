@@ -6,7 +6,7 @@ This project implements a machine‐learning and survival‐analysis workflow fo
 
 ## Usage
 
-Open the notebook `breast_cancer_survival_prediction.ipynb` and step through the cells. The code is structured to:
+Open the notebook `main_predict.ipynb` and step through the cells. The code is structured to:
 
 - Load the dataset `METABRIC_RNA_Mutation.csv`
 
@@ -21,6 +21,10 @@ Open the notebook `breast_cancer_survival_prediction.ipynb` and step through the
 Feature evaluation with survival analysis is in `/feature_anlysis`:
 
 ....
+
+
+The whole process with additional dashboard generated is in `predict_with_dashbord.ipynb`:
+
 - Generate a prototype CDS dashboard via `plot_cds_dashboard(...)`, producing a patient-level survival report with clickable gene annotations.
 
 
