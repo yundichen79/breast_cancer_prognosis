@@ -20,8 +20,23 @@ Open the notebook `main_predict.ipynb` and step through the cells. The code is s
 
 Feature evaluation with survival analysis is in `/feature_anlysis`:
 
-....
+To be notied, we have `overall_survival == 0` = death (event), `1` = alive (censored)  
 
+We performs Kaplan–Meier survival analysis for **every feature**.
+
+Handling all variable types:  
+   - Continuous variables → divided into quartiles (or median split if low spread)  
+   - Known ordinal variables (e.g. histologic grade 1/2/3) → forced to categorical  
+   - Categorical / binary variables → used as-is (empty strings and whitespace cleaned to NA)  \
+
+The whole analysis procedure is: 
+
+For each feature it automatically:  
+   - Builds the KM curve  
+   - Performs log-rank test  
+   - Calculates HR + 95% CI (single HR for binary variables; pairwise HRs vs reference for multi-level variables)  
+   - Shows a publication-quality plot with p-value and HR directly on the figure  
+   - all results saved as high-resolution PNG in the folder `KM_plots/`  
 
 The whole process with additional dashboard generated is in `predict_with_dashbord.ipynb`:
 
