@@ -73,6 +73,10 @@ The whole process with additional dashboard generated is in `predict_with_dashbo
 
     The Calibration Curve shows that the Combined Model generates predictions that closely match the observed survival rates, while the survival probability distribution shows clear shifts in and separation of the distribution of alive and death groups, demonstracting the Combined Model's capacity to produce reliable, well-calibrated survival probability estimates.
 
+3. Kaplan-Meier Survival Curve:
+
+
+
 ## Output
 ### Prototype Clinical Decision Support Dashboard
 
