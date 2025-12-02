@@ -75,7 +75,12 @@ The whole process with additional dashboard generated is in `predict_with_dashbo
 
 3. Kaplan-Meier Survival Curve:
 
+    <p float="left">
+    <img src="figures/KM_age_at_diagnosis_p5.06e-14.png" width="45%" />
+    <img src="figures/KM_primary_tumor_laterality_p0.209.png" width="45%" />
+    </p>
 
+The two Kaplan-Meier Survival Curves shows two features: one significant and another not significant. The threshold for signicant is < 0.05, using two-side Log-Rank tests. We also applied HR or stratified log-rank test for pairwise HR for help analysis harm level. Which could be found at [`KM_analysis_results`](./results/KM_analysis_results.csv), and all outputs figures can be found at [`KM_plot`](./KM_plots) folder.
 
 ## Output
 ### Prototype Clinical Decision Support Dashboard
