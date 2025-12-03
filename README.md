@@ -17,6 +17,9 @@ Open the notebook `main_predict.ipynb` and step through the cells. The code is s
 - Train and test Random Forest models on four feature layers: clincal, gene expression, mutation, and combination of clincal attributes and gene expression
 
 - Evaluate performance and generate output visualizations
+  
+- Generate a prototype CDS dashboard via `plot_cds_dashboard(...)`, producing a patient-level survival report with clickable gene annotations.
+  
 
 Feature evaluation with survival analysis is in `/feature_anlysis`:
 
@@ -39,8 +42,6 @@ For each feature it automatically:
    - all results saved as high-resolution PNG in the folder `KM_plots/`  
 
 The whole process with additional dashboard generated is in `predict_with_dashbord.ipynb`:
-
-- Generate a prototype CDS dashboard via `plot_cds_dashboard(...)`, producing a patient-level survival report with clickable gene annotations.
 
 
 ## Results and Interpretation
@@ -80,7 +81,7 @@ The whole process with additional dashboard generated is in `predict_with_dashbo
     <img src="figures/KM_primary_tumor_laterality_p0.209.png" width="45%" />
     </p>
 
-The two Kaplan-Meier Survival Curves shows two features: one significant and another not significant. The threshold for signicant is < 0.05, using two-side Log-Rank tests. We also applied HR or stratified log-rank test for pairwise HR for help analysis harm level. Which could be found at [`KM_analysis_results`](./results/KM_analysis_results.csv), and all outputs figures can be found at [`KM_plot`](./KM_plots) folder.
+   The two Kaplan-Meier Survival Curves shows two features: one significant and another not significant. The threshold for signicant is < 0.05, using two-side Log-Rank tests. We also applied HR or stratified log-rank test for pairwise HR for help analysis harm level. Which could be found at [`KM_analysis_results`](./results/KM_analysis_results.csv), and all outputs figures can be found at [`KM_plot`](./KM_plots) folder.
 
 ## Output
 ### Prototype Clinical Decision Support Dashboard
